@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LXI Square</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/board.css">
+  <link rel="stylesheet" href="./css/input_move.css">
+  <link rel="stylesheet" href="./css/evt.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color: unset;">
+  <div id="popUpWrap" class="evt results">
+    <!--22.05.13 팝업창에서 팝업종료버튼 삭제-->
+        <article class="board_article">
+          <div class="evtCloseBtn"><span></span><span></span></div>
+          <img src="./img/evt_applied.png" alt="">
+          <div class="resultsInner">
+            <h1>이벤트 신청에 성공 하였습니다!</h1>
+            <p>담당자의 개별 연락을 통해 상품이 지급될 예정입니다 :)</p>
+          </div>
+        </article>    
+  </div>
+<script src="./js/main.js"></script>
+<script>
+  let cols = document.querySelectorAll('div.inputWrap'); 
+  [].forEach.call(cols,function(col){ 
+    col.addEventListener("click",click,false); 
+  }); 
+  function click(e){ 
+    if(this.classList.contains("iFocused") === false){
+      this.classList.add("iFocused");
+    }
+  }
+  document.querySelector(".check").addEventListener("click",function(){
+    if(this.classList.contains("checked") === true){
+      this.classList.remove("checked");
+    } else {
+      this.classList.add("checked");
+    }
+  })
+</script>
+</body>
+</html>

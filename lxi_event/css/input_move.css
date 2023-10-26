@@ -1,0 +1,174 @@
+.applyForm > p{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#popUpWrap{
+    height: 100vh;
+}
+.applyForm .inputWrap{
+    width: 100%;
+    height: 34px;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+    margin:3px 0 40px;
+    position: relative;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.applyForm .inputWrap.tuw{
+    height: unset;
+    border-bottom: 0;
+}
+.applyForm .inputWrap.tuw h4{
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+.applyForm .inputWrap.tuw textarea{
+    width: 100%;
+    height: 380px;
+    resize: none;
+    border: 1px solid #cbcbcb;
+    box-sizing: border-box;
+}
+.applyForm .inputWrap.tuw textarea:focus{
+    outline: unset;
+}
+.applyForm .inputWrap input{
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    /*z-index: 1;
+    background-color: #fff;
+    position: relative;*/
+}
+.applyForm .inputWrap input:focus{
+    outline: none;
+}
+.applyForm .inputWrap.iFocused .afmt{
+    color: #000;
+    bottom: 28px;
+    font-size: 14px;
+}
+.afmt{
+    transition: ease all 0.2s;
+    color: #cbcbcb;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    
+}
+.agree{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.agree input{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+}
+.agree label{
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.agree > span{
+    font-size: 12px;
+}
+.agree label span{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    background-color: #ececec;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.agree label span.checked::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    border-radius: 50%;
+    background-image: url(../img/check.svg);
+    background-size: cover;
+    background-position: center;
+}
+.agreeBox::-webkit-scrollbar {
+    width: 7px;  /* 스크롤바의 너비 */
+}
+
+.agreeBox::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #cbcbcb; /* 스크롤바의 색상 */
+    
+    border-radius: 5px;
+}
+.agreeBox::-webkit-scrollbar-track {
+    background: #f0f0f0;  /*스크롤바 뒷 배경 색상*/
+}
+
+/* 이벤트 응모하기 팝업창 */
+.applyForm{
+    padding: 0 100px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    text-align: center;
+}
+table caption{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+}
+.agreeBox{
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+    overflow-y: auto;
+    font-size: 10px;
+    height: 150px;
+    line-height: 1.7;
+}
+.agreeBox table{
+    /*margin-top: 2.777vw;*/
+}
+.agreeBox dt,.agreeBox dd{
+    margin-bottom: 10px;
+}
+.tableList table th, .tableList table td{
+    padding: 5px;
+    border: 1px solid #a1a1a1;
+}
+@media only screen and (max-width: 800px) {
+    .applyForm{
+        padding: 0 calc(16.66666vw - 20px);
+    }
+    .applyForm > p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}

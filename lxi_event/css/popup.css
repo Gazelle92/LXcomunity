@@ -1,0 +1,9 @@
+iframe.popUp{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+iframe.popUp body{
+    background-color: unset;
+}

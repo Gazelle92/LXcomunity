@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/people.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <a class="mainLogo" href="./index.html"><img src="./img/main_logo_w.png" alt="LX인터네셔널"></a>
+    <ul>
+      <!--22.05.27 텍스트 수정-->
+      <li><a href="./magazine.html">Focus Session</a></li>
+      <li><a class="currentPage" href="./people.html">People</a></li>
+      <li><a href="./issue.html">NewsRoom</a></li>
+      <li><a href="./contents.html">Contents</a></li>
+      <li><a href="./event.html">LXI Square</a></li>
+    </ul>
+    <div class="mobGnb">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+  <div class="pb">
+    <img src="./img/people_bg.png">
+    <div class="obg"></div>
+  </div>
+  <div id="ppTitle">
+    <!--22.05.27 타이틀 수정-->
+    <h1>People</h1>
+    <div class="ppThumbnail">
+      <img src="./img/pptn.webp">
+      <div class="ptt">
+        <a href="#">멤버 인터뷰</a>
+        <span>2월의 입사자를 소개합니다</span>
+      </div>
+      
+    </div>
+  </div>
+  <div id="wrap">
+    <div class="subtitle">
+      <ul>
+        <li><a href="#" class="viewAll btnUnderline currentView">View All</a></li>
+        <li><a href="#" class="btnUnderline">Zoom人</a></li>
+        <li><a href="#" class="btnUnderline">Our Team</a></li>
+      </ul>
+    </div>
+    <section id="main">
+      <!--ul.ppWrap 통합-->
+      <ul class="ppWrap">
+        <li>
+          <a href="./board.html">
+            <img src="./img/mgzel1.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/mgzel1.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+        <li>
+          <a href="./board.html">
+            <img src="./img/ppimg.png">
+            <p>우리팀 소개</p>
+            <span>2월의 입사자를 소개합니다</span>
+          </a>
+        </li>
+      </ul>
+      
+      <div class="readMore">
+        <a class="btnBg" href="#">LOAD MORE</a>
+      </div>
+    </section>
+  </div>
+  <nav class="ttt">
+    <div class="navBg_r"></div>
+    <div class="navBg_g"></div>
+    <span>TOP</span>
+  </nav>
+  <!--22.06.08 footer 추가-->
+  <footer>
+    <div class="footerWrap">
+      <div class="footerImg">
+        <img src="./img/main_logo_w.png">
+      </div>
+      <span>Copyright© by LX International Corp. ALL RIGHT RESERVED.</span>
+    </div>
+  </footer>
+<script src="./js/main.js"></script>
+<script>
+document.querySelector("body").addEventListener("wheel", wheelLocation);
+function wheelLocation(){
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+}
+
+/*22.06.10 ul.ppWrap 통합 */
+$(document).ready(function(){
+  $(window).scroll(function(){
+  let cd1 = $("#main .ppWrap li:nth-child(1)").offset().top - $(window).height() + Math.floor($("#main .ppWrap li:nth-child(1)").css("height").replace('px', '')); 
+  let cd2 = $("#main .ppWrap li:nth-child(4)").offset().top - $(window).height() + Math.floor($("#main .ppWrap li:nth-child(2)").css("height").replace('px', '')); 
+  let cd3 = $("#main .ppWrap li:nth-child(7)").offset().top - $(window).height() + Math.floor($("#main .ppWrap li:nth-child(3)").css("height").replace('px', '')); 
+    if( cd1 < $(document).scrollTop()){
+      $("#main .ppWrap li:nth-child(1)").addClass("cdOn");
+      $("#main .ppWrap li:nth-child(2)").addClass("cdOn");
+      $("#main .ppWrap li:nth-child(3)").addClass("cdOn");
+    };
+    if( cd2 < $(document).scrollTop()){
+      $("#main .ppWrap li:nth-child(4)").addClass("cdOn");
+      $("#main .ppWrap li:nth-child(5)").addClass("cdOn");
+      $("#main .ppWrap li:nth-child(6)").addClass("cdOn");
+
+    };
+    if( cd3 < $(document).scrollTop()){
+      $("#main .ppWrap li:nth-child(7)").addClass("cdOn");
+      $("#main .ppWrap li:nth-child(8)").addClass("cdOn");
+      $("#main .ppWrap li:nth-child(9)").addClass("cdOn");
+    };
+  });
+  $(function(){
+    $(".ppWrap li").css("display","none");
+    $(".ppWrap li").slice(0, 9).show();
+    $(".btnBg").click(function(e){ 
+    e.preventDefault();
+    $(".ppWrap li:hidden").slice(0, 3).show(); 
+    if($(".ppWrap li:hidden").length == 0){ 
+    }
+    });
+  });
+});
+
+</script>
+</body>
+</html>

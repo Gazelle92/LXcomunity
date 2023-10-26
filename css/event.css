@@ -1,0 +1,308 @@
+#wrap.eventPg #titles p{
+    padding-left: 0;
+    padding-right: 0;
+}
+#wrap.eventPg{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#wrap .eventBg{
+    background-color: #b42f2e;
+    height: calc(100% - 160px);
+    width: 56.5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+#wrap.eventPg #titles{
+    margin-top: 0;
+    position: absolute;
+    top: 240px;
+    width: 43.5%;
+    box-sizing: border-box;
+}
+#wrap .eventBg .ebg_2{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    width: 550px;
+}
+#wrap .eventBg .hexagon{
+    position: absolute;
+    top: 17%;
+    left: 8.5%;
+    width: 275px;
+}
+#wrap.eventPg .ebg_1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 26%;
+}
+#wrap.eventPg #scrollBar{
+    width: calc(100% - 160px);
+    position: absolute;
+    height: 2px;
+    background-color: #e37d7d;
+    bottom: 48px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+#scrollBar > div{
+    width: calc(100%);
+    margin: 0 200px 0 0;
+    position: relative;
+}
+#wrap.eventPg #scrollBar #scrollLc{
+    width: 200px;
+    box-sizing: border-box;
+    height: 6px;
+    background-color: #f8a0a0;
+    border-radius: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    transition:  ease 0.6s left;
+    left: 0;
+}
+#slider{
+    display: flex;
+    bottom: 100px;
+    position: absolute;
+    /*left: 43.5%;*/
+    left: 35%;
+    transition: ease transform 0.8s;
+    transform: translateX(0px);
+    align-items: flex-end;
+}
+#slider .slide{
+    position: relative;
+    margin-right: 40px;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+#slider .slide img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    transition: ease all 0.6s;
+}
+#slideControl{
+    position: absolute;
+    display: flex;
+    right: 80px;
+    bottom: 360px;
+    z-index: 1;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+}
+#slideControl div{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #f8a0a0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#slideControl .scLeft{
+    margin-right: 10px;
+}
+#slideControl .scRight img{
+    transform: rotate(180deg);
+}
+#slideControl div img{
+    position: absolute;
+    width: 26px;
+}
+#slider .slide.so{
+    width: 330px;
+    height: 330px;
+}
+#slider .slide .aLink{
+    position: relative;
+    display: block;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide.puw.so::after{
+    font-size: 14px;
+    z-index: 24;
+    position: absolute;
+    top: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px 2px rgb(0 0 0 / 10%);
+}
+.slide.puw.so.apply::after{
+    content: '모집중';
+    color: #fff;
+    background: #2EAFC1;
+}
+.slide.puw.so.apdne::after{
+    content: '모집완료';
+    color: #a0a0a0;
+    background: #fff;
+}
+
+.slide.puw.so.showr::after{
+    content: '결과발표';
+    color: #a0a0a0;
+    background: #fff;
+}
+
+@media only screen and (max-width: 1280px) {
+    #titles{
+        padding: 0 20px 0 40px;
+    }
+    #titles .title{
+        font-size: 56px;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    #wrap.eventPg #titles{
+        margin-top: 120px;
+        position: relative;
+        top: unset;
+        margin-bottom: 80px;
+        width: 100%;
+    
+    }
+    .eventPg{
+        display: flex;
+        flex-direction: column;
+    }
+    #wrap .eventBg{
+        width: 100%;
+        position: absolute;
+        height: calc(100% - 280px);
+    }
+    #slider{
+        left: 0;
+        position: relative;
+        bottom: unset;
+        width: 400vw;
+        padding-bottom: 80px;
+    }
+    .sliderWrap{
+        width: calc(100% - 0px);
+        position: absolute;
+        overflow-x: scroll;
+        bottom: 40px;
+        box-sizing: border-box;
+        padding: 0 0 0 20px;
+    }
+    .sliderWrap::-webkit-scrollbar {
+        height: 6px;  /* 스크롤바의 너비 */
+    }
+    
+    .sliderWrap::-webkit-scrollbar-thumb {
+        width: 25%; /* 스크롤바의 길이 */
+        background: #f8a0a0; /* 스크롤바의 색상 */
+        padding: 0 20px;
+        border-radius: 5px;
+    }
+
+    #slider .slide{
+        width: 60vw;
+        height: 60vw;
+        margin-right: 20px;
+        max-width: 40vh;
+        max-height: 40vh;
+    }
+
+    #slider .slide.so{
+        width: 60vw;
+        height: 60vw;
+    }
+    #slideControl{
+        right: unset;
+        left: 20px;
+        display: none;
+    }
+    #wrap.eventPg #scrollBar{
+        width: calc(100% - 40px);
+        bottom: 42px;
+    
+    }
+    #scrollBar > div{
+        width: calc(100%);
+        display: none;
+    }
+    #wrap.eventPg #scrollBar #scrollLc{
+        width: 80px;
+    }
+    #wrap.eventPg .ebg_1{
+        display: none;
+    }
+    #wrap .eventBg .hexagon{
+        top: unset;
+        bottom: 10%;
+        left: unset;
+        right: 8.5%;
+    }
+    #wrap .eventBg .ebg_2{
+        left: unset;
+        right: 0;
+        width: 180px;
+    }
+
+
+    .slide.puw::after, .slide.puw.so::after{
+        top: unset;
+        bottom: -40px;
+        left: 50%;
+        font-size: 14px;
+        z-index: 24;
+        position: absolute;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 4px 2px rgb(0 0 0 / 10%);
+    }
+    .slide.puw.apply::after{
+        content: '모집중';
+        color: #fff;
+        background: #2EAFC1;
+    }
+    .slide.puw.apdne::after{
+        content: '모집완료';
+        color: #a0a0a0;
+        background: #fff;
+    }
+    
+    .slide.puw.showr::after{
+        content: '결과발표';
+        color: #a0a0a0;
+        background: #fff;
+    }
+}

@@ -1,0 +1,1155 @@
+body{
+    background-color: unset;
+}
+#wrap{
+    margin: 0 auto;
+}
+section{
+    position: relative;
+    margin: 0 auto;
+}
+#wrap .inOn{
+    transform: translateY(100px);
+    opacity: 0;
+}
+.slice > div:first-child{
+    width: calc(((100% / 12) * 7) - 20px);
+    margin-right: 20px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+}
+.slice > div:last-child{
+    float: right;
+    width: calc(((100% / 12) * 5) - 20px);
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+section .title{
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: lighter;
+    z-index: 1;
+}
+.sec1{
+    padding-top: 128px;
+    max-width: 1600px;
+}
+.sec2{
+    padding: 80px 0;
+    background-color: #34424e;
+}
+.ew{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.sec1 .fs .slide ul{
+    position: absolute;
+}
+.fs{
+    width: calc(((100% / 12) * 7) - 20px);
+    margin-right: 20px;
+    position: relative;
+    float: left;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transform: translateY(000px);
+    opacity: 1;
+    transition: ease 1.2s opacity, ease 1.2s transform;
+    margin-bottom: 100px;
+}
+.fs .slide{
+    position: relative;
+}
+.fs .slide ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.fs .slide li{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+}
+
+.fs .slide .pic::after{
+    box-sizing: border-box;
+    display: block;
+    content: '';
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    z-index: -1;
+}
+.fs h1{
+    color: #b42f2e;
+    padding-left: 60px;
+    margin-bottom: 32px;
+    
+}
+.textBox{
+    position: relative;
+    background-color: #fff;
+    color: #222222;
+    font-size: 18px;
+    line-height: 1.56;
+    box-sizing: border-box;
+    font-weight: 500;
+    padding: 20px;
+}
+.fs .textBox{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 500px;
+    max-width: 100%;
+}
+.btnWrap{
+    position: absolute;
+    display: flex;
+    
+}
+.fs .btnWrap{
+    bottom: -60px;
+}
+.btnWrap div{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.btnWrap div img{
+    width: 20px;
+    height: 10px;
+    display: block;
+    position: relative;
+}
+.btnWrap div:first-child{
+    margin-right: 10px;
+}
+.btnWrap div:last-child img{
+    transform: rotate(180deg);
+}
+.nc{
+    float: right;
+    background-color: #f4f4f4;
+    width: calc(((100% / 12) * 5) - 20px);
+    margin-left: 20px;
+    box-sizing: border-box;
+    padding: 92px 40px 100px;
+    transform: translateY(000px);
+    opacity: 1;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.ncTitle{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 44px;
+    width: calc(100% - 20px);
+}
+.ncTitle h1{
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+}
+.ncTitle span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.ncTitle .calender{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.calender input{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.calender input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+} 
+.ncTitle img{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.nc ul{
+    position: relative;
+}
+.newsList::after{
+    content: '';
+    display: block;
+    width: calc(100% - 20px);
+    position: relative;
+    padding-bottom: 44px;
+    /*margin-bottom: 20px;*/
+    border-bottom: 2px solid #000;
+}
+.nc ul li{
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-style: dashed;
+    border: 0;
+    border-bottom: 1px dashed #c3c3c3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 28px;
+    
+}
+.nc ul li:last-child{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+.nc ul li a{
+    font-size: 18px;
+    line-height: 1.56;
+    color: #000;
+}
+
+
+.nr h1{
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 60px;
+    margin-bottom: 32px;
+}
+.sw{
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity ease 1.8s, transform ease 1.8s;
+}
+.sw .slide li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.sw .slide li .pic{
+    position: absolute;
+    bottom: 0;
+    box-shadow: 12px 0 20px 0 rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: ease all 0.4s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor: pointer;
+}
+.sw .slide{
+    position: unset;
+    width: 57%;
+}
+.sw .slide::after{
+    content: '';
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.sw .slide li .pic::after{
+    content: '';
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.sw .pic{
+    margin-left: 0;
+}
+.sw .slide li.sl_1 .pic{
+    width: 57%;
+    z-index: 2;
+    left: 0;
+}
+.sw .slide li.sl_2 .pic{
+    width: 36.5%;
+    left: 49%;
+    z-index: 1;
+}
+.sw .slide li.sl_3 .pic{
+    width: 24%;
+    left: 76%;
+    z-index: 0;
+}
+
+.sw .slide .dots{
+    right: 0;
+}
+.sw .textBox{
+    width: 57%;
+    position: absolute;
+}
+.sw .btnWrap{
+    bottom: -96px;
+    right: 0;
+}
+.sw .slide li .textBox{
+    display: none;
+    bottom: 0;
+    transform: translateY(100%);
+}
+.sw .slide li.sl_1 .textBox{
+    display: block;
+}
+.nr .dots div{
+    background-color: #616c75;
+}
+.nr .dots div.currentSlide{
+    background-color: #fff;
+}
+.nr .btnWrap div{
+    border: 1px solid #fff;
+    background-color: unset;
+}
+.ls{
+    position: relative;
+    padding-right: 40px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: ease opacity 2.1s, ease transform 2.1s;
+}
+.ls .title{
+    color: #fff;
+    margin-bottom: 32px;
+}
+.ls .lsInner{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.lsInner .tw{
+    position: relative;
+    width: 32%;
+}
+.ls .lsImgBox{
+    width: 68%;
+    background-color: antiquewhite;
+    position: relative;
+    display: block;
+    float: left;
+}
+.ls .lsImgBox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ls .lsImgBox::after{
+    padding-bottom: 100%;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+.ls .ttu{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: right;
+    transition: background-color ease 0.2s;
+}
+.ls .ttu a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+.ls .ttu span{
+    line-height: 1.56;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    width: calc(100% - 40px);
+    padding: 32px 0;
+    text-align: center;
+    
+}
+
+.ls .ttu:nth-child(1){
+    background-color: #d84e4d;
+}
+.ls .ttu:nth-child(1) span{
+    
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.ls .ttu:nth-child(2){
+    background-color: #fff;
+}
+.ls .ttu:nth-child(2) span{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+.ls .ttu:nth-child(1):hover{
+    background-color: #ec6c6c;
+}
+.ls .ttu:nth-child(2):hover{
+    background-color: #dddddd;
+}
+.ls .textBox{
+    position: absolute;
+    width: 350px;
+    right: 40px;
+    bottom: 0;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.dots{
+    position: absolute;
+    display: inline-block;
+}
+.fs .dots{
+    right: 0;
+    bottom: -24px;
+}
+.nc .dots{
+    right: 40px;
+    bottom: 76px;
+}
+.dots div{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 4px;
+    background-color: #dddddd;
+    margin-right: 4px;
+}
+.dots div:last-child{
+    margin-right: 0;
+}
+.dots div.currentSlide{
+    background-color: #34424e;
+}
+
+.sec3{
+    padding-top: 80px;
+    width: 100%;
+    margin-right: 20px;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+}
+.pp{
+    position: relative;
+    width: calc(((100% / 12) * 7) - 20px);
+}
+.pp .title{
+    padding-left: 60px;
+    color: #b42f2e;
+    margin-bottom: 32px;
+}
+.ctsWrap{
+    background-color: #f4f4f4;
+}
+.cts{
+    width: calc(((100% / 12) * 7) - 20px);
+    margin-top: 180px;
+    padding: 80px 10px 100px 60px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.cts .title{
+    color: #b42f2e;
+    margin-bottom: 32px;
+}
+.ctsInner{
+    display: flex;
+    position: relative;
+}
+.ctsBox{
+    margin-right: 60px;
+    width:100%;
+}
+.ctsBox:last-child{
+    margin-right: 0;
+}
+.ctsBox span{
+    font-size: 18px;
+    line-height: 1.56;
+    color: #222222;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.ctsBox .ibc{
+    position: relative;
+    overflow: hidden;
+}
+.ctsBox .ibc::after{
+    display: block;
+    content: '';
+    position: relative;
+    width: 100%;
+    padding-bottom: 150%;
+}
+.ctsBox .ibc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.emptyBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+
+    z-index: -1;
+
+}
+.sec4{    
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.sec4 .sn{
+    position: absolute;
+    right: 0;
+    width: calc(((100% / 12) * 5) - 20px);
+    margin-left: 20px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    background-color: #b42f2e;
+    padding: 80px 40px;
+}
+footer{
+    clear: both;
+}
+.sn .title{
+    color: #fff;
+    margin-bottom: 32px;
+}
+.sn .ib{
+    width: 47.7%;
+    position: relative;
+}
+.sn .ib::after{
+    content: '';
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.sn .ib img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sn .snBox{
+    position: relative;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+.sn .snBox:last-child{
+    margin-bottom: 0px;
+}
+.sn .snBox .textBox{
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: 0;
+}
+.sec3 .emptyBg{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+footer{
+    background-color: #f4f4f4;
+}
+@media only screen and (max-width: 1100px) {
+    .sec4 .sn{
+        padding: 80px 20px;
+    }
+    .ls .textBox, .sn .snBox .textBox{
+        font-size: 14px;
+        width: 300px;
+        max-width: 100%;
+    }
+    .ls .ttu span{
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .nc{
+        padding: 92px 20px 100px;
+    }
+    .ncTitle{
+        margin-bottom: 30px;
+    }
+    .ncTitle h1{
+        font-size: 18px;
+    }
+    .ncTitle span{
+        font-size: 14px;
+    }
+    .ncTitle .calender{
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        margin-left: 12px;
+        border-radius: 2px;
+    }
+    .ncTitle img{
+        width: 14px;
+        height: 14px;
+    }
+    .nc ul li{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        height: unset;
+    }
+    .nc ul li a{
+        font-size: 16px;
+    }
+    .ctsBox{
+        margin-right: 20px;
+    }
+    .ctsBox span{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .textBox{
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 16px;
+        font-weight: 600;
+    }
+    .btnWrap div{
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+    }
+    .btnWrap div:first-child{
+        margin-right: 4px;
+    }
+    .btnWrap div img{
+        width: 10px;
+        height: 5px;
+    }
+    .slice > div:first-child, .slice > div:last-child, .sec4 .sn{
+        width: 100%;
+        float: unset;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sec1{
+        padding: 120px 0 0;
+        box-sizing: border-box;
+    }
+    .fs{
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+    .fs .slide{
+        margin-top: 0;
+    }
+    section .title{
+        font-size: 24px;
+    }
+    .fs h1{
+        top: -22px;
+        left: 20px;
+    }
+    .fs .dots{
+        bottom: unset;
+        top: -8px;
+    }
+    .dots div{
+        width: 20px;
+        height: 2px;
+    }
+    .fs .textBox{
+        bottom: 0;
+        transform: translateY(-50%);
+        width: calc((100vw / 3) * 2);
+        left: 0px;
+    }
+    .fs .btnWrap{
+        bottom: -28px;
+        right: 20px;
+    }
+    .fs::before{
+        content: '';
+        position: absolute;
+        width: calc(100% + 20px);
+        height: 50%;
+        bottom: 0;
+        left: -20px;
+        background-color: #f4f4f4;
+    }
+
+    .nc{
+        padding: 97px 20px 60px;
+    }
+    .ncTitle{
+        width: 100%;
+        padding-bottom: 4px;
+        margin-bottom: 32px;
+    }
+    .ncTitle h1{
+        font-size: 16px;
+    }
+    .ncTitle span{
+        font-size: 12px;
+    }
+    
+    .nc ul li{
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    .nc ul li a{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .newsList::after{
+        width: 100%;
+        padding-bottom: 32px;
+    }
+    .nc .dots{
+        right: 20px;
+        bottom: 46px;
+    }
+    .sec2{
+        padding: 60px 0;
+    }
+    .nr h1{
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    .sw .slide{
+        width: 100%;
+        position: relative;
+    }
+    .sw .slide::after{
+        padding-bottom: calc(((56.25%) * (2/3)));
+    }
+    .sw .slide li .pic{
+        box-shadow: 2px 0 16px 0 rgba(0, 0, 0, 0.12);
+    }
+    .sw .slide li.sl_1 .pic{
+        width: 66%;
+    }
+    .sw .slide li.sl_2 .pic{
+        width: 50%;
+        left: 33%;
+    }
+    .sw .slide li.sl_3 .pic{
+        width: calc((100%) * 1/3);
+        left: calc((100%) * 2/3);
+    }
+    .sw .slide .dots{
+        right: 20px;
+    }
+    .sw .btnWrap{
+        bottom: -47px;
+        right: 20px;
+    }
+    .nr .textBox{
+        width: 66%;
+        height: 74px;
+        overflow: hidden;
+        box-sizing: border-box;
+        z-index: 3;
+        text-overflow: ellipsis;
+    }
+    .nr .textBox span{
+        display: block;
+        height: 100%;
+        text-overflow: ellipsis;
+        /* white-space: nowrap; */
+        position: relative;
+        overflow: hidden;
+    }
+    .ls{
+        margin-top: 132px;
+        padding: 0 20px;
+    }
+    .ls .title{
+        margin-bottom: 20px;
+    }
+    .ls .lsInner{
+        flex-direction: column;
+    }
+    .ls .lsImgBox{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .lsInner .tw{
+        display: flex;
+        width: 100%;
+    }
+    .ls .ttu{
+        float: none;
+        width: 50%;
+        height: 60px;
+    }
+    .ls .ttu:nth-child(1) span, .ls .ttu:nth-child(2) span{
+        border: 0;
+        font-size: 18px;
+    }
+    .ls .ttu::before{
+        height: 60px;
+        padding: 0;
+    }
+    .ls .ttu span{
+        padding: 0;
+        border: 0;
+    }
+    .ls .textBox{
+        width: 66%;
+        height: 74px;
+        right: 0;
+        bottom: 60px;
+        overflow: hidden;
+        width: 66%;
+        height: 74px;
+    }
+    .ls .textBox span{
+        overflow: hidden;
+    }
+    .sec3, .sec4{
+        float: none;
+    }
+    .pp{
+        width: 100%;
+    }
+    .pp .title{
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    .sw .textBox{
+        width: 66%;
+        height: 74px;
+    }
+    .sw .textBox span{
+        overflow: hidden;
+        display: block;
+        position: relative;
+        height: 100%;
+    }
+    .cts{
+        width: 100%;
+        margin-top: 134px;
+        padding: 60px 20px;
+    }
+    .ctsInner{
+        flex-direction: column;
+    }
+    .ctsBox{
+        margin-right: 0;
+        display: none;
+    }
+    .ctsBox .ibc{
+        margin: 0 50px;
+        width: calc(100% - 100px);
+    }
+    .ctsBox:first-child{
+        display: block;
+    }
+    .ctsBox span{
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        font-weight: 600;
+    }
+    .sec4 .sn{
+        width: 100%;
+        position: relative;
+        padding: 60px 20px 80px;
+        margin-bottom: 0;
+    }
+    .sn .title{
+        margin-bottom: 20px;
+    }
+    .sn .snBox{
+        padding-right: 40px;
+    }
+    .sn .ib{
+        width: 100%;
+    }
+    .sn .snBox .textBox{
+        width: 66vw;
+        height: 74px;
+        right: -20px;
+    }
+    .sn .snBox .textBox span{
+        height: 100%;
+        overflow: hidden;
+        display: block;
+    }
+}
+
+
+.fs .slick-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.fs .slick-slider div{
+    position: relative;
+    height: 100%;
+}
+.fs .slick-slider .textBox{
+    height: unset;
+    position: absolute;
+}
+.sec1 .fs{
+    padding-left: 0;
+}
+.sec1 .fs .slick-prev{
+    bottom: -60px;
+    left: 40px;
+}
+.sec1 .fs .slick-next{
+    bottom: -60px;
+    left: 90px;
+}
+#wrap .slick-dots{
+    z-index: 10;
+    display: flex;
+    
+}
+.pic{
+    margin-left: 40px;
+}
+.sil{
+    padding-left: 0px;
+}
+#wrap .slick-dots li{
+    background-color: #dddddd;
+    width: 40px;
+    height: 100%;
+    margin: 0 8px 0 0;
+    padding: 0;
+    border: unset;
+}
+#wrap .slick-dots li.slick-active{
+    background-color: #000;
+}
+#wrap .slick-dots li:last-child{
+    margin: 0;
+}
+#wrap .slick-dots{
+    width: unset;
+    height: 4px;
+    position: absolute;
+}
+#wrap .sec1 .fs .slick-dots{
+    right: 0;
+    bottom: -24px;
+}
+#wrap .sec1 .nc .slick-dots{
+    right: 0;
+    bottom: -54px;
+}
+#wrap .sec1 .nc .slick-prev,#wrap .sec1 .nc .slick-next{
+    display:  none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    z-index: -10;
+}
+@media only screen and (max-width: 800px) {
+    #wrap .slick-dots{
+        height: 2px;
+    }
+    #wrap .slick-prev,#wrap  .slick-next{
+        width: 20px;
+        height: 20px;
+        padding: 6px 4px;
+    }
+    #wrap .sec1 .fs .slick-dots{
+        bottom: unset;
+        top: -8px;
+    }
+    #wrap .slick-dots li{
+        width: 20px;
+        margin: 0 4px 0 0;
+    }
+    .sec1 .fs .slick-prev{
+        right: 24px;
+        bottom: 46px;
+        left: unset;
+    }
+    .sec1 .fs .slick-next{
+        right: 0;
+        bottom: 46px;
+        left: unset;
+    }
+    #wrap .sec1 .nc .slick-dots{
+        bottom: -14px;
+    }
+    .fs .slick-list{
+        overflow: unset;
+        overflow-x: hidden;
+    }
+    .fs .slick-dotted.slick-slider{
+        margin-bottom: 0;
+    }
+    .fs .slick-slider .textBox{
+        position: relative;
+    }
+
+}
+
+.fs .slick-slider{
+    position: relative;
+}
+
+.fs .slick-slider div{
+    height: unset;
+}
+.sil:hover .textBox, .sw .slide li:hover .textBox{
+    cursor: pointer;
+    background-color: #b42f2e;
+    color: #fff;
+    transition: background-color ease 0.2s, color ease 0.2s;
+}
+.sn .snBox:hover .textBox{
+    background-color: #34424e;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color ease 0.2s, color ease 0.2s;
+}
+
+
+
+/* 여기서 테스트 시작 */
+/*
+.nr.sw .slide li .pic{
+    width: calc(24% + ((33% / 7) * 0));
+}
+.nr.sw .slide li:nth-child(1) .pic{
+    width: calc(24% + ((33% / 7) * 7));
+    left: calc(((76% / 7) * 0));
+    z-index: 8;
+}
+.nr.sw .slide li:nth-child(2) .pic{
+    width: calc(24% + ((33% / 7) * 6));
+    left: calc(((76% / 7) * 1));
+    z-index: 7;
+}
+.nr.sw .slide li:nth-child(3) .pic{
+    width: calc(24% + ((33% / 7) * 5));
+    left: calc(((76% / 7) * 2));
+    z-index: 6;
+}
+.nr.sw .slide li:nth-child(4) .pic{
+    width: calc(24% + ((33% / 7) * 4));
+    left: calc(((76% / 7) * 3));
+    z-index: 5;
+}
+.nr.sw .slide li:nth-child(5) .pic{
+    width: calc(24% + ((33% / 7) * 3));
+    left: calc(((76% / 7) * 4));
+    z-index: 4;
+}
+.nr.sw .slide li:nth-child(6) .pic{
+    width: calc(24% + ((33% / 7) * 2));    
+    left: calc(((76% / 7) * 5));
+    z-index: 3;
+}
+.nr.sw .slide li:nth-child(7) .pic{
+    width: calc(24% + ((33% / 7) * 1));
+    left: calc(((76% / 7) * 6));
+    z-index: 2;
+}
+.nr.sw .slide li:nth-child(8) .pic{
+    width: calc(24% + ((33% / 7) * 0));
+    left: calc(((76% / 7) * 7));
+    z-index: 1;
+}
+.nr.sw .slide li:nth-child(1) .textBox{
+    display: block;
+}*/
+/*
+@media only screen and (max-width: 800px) {
+    .nr.sw .slide li .pic{
+        width: calc((100% / 3) + ((33% / 7) * 0));
+    }
+    .nr.sw .slide li:nth-child(1) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 7));
+        left: calc(((66% / 7) * 0));
+    }
+    .nr.sw .slide li:nth-child(2) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 6));
+        left: calc(((66% / 7) * 1));
+    }
+    .nr.sw .slide li:nth-child(3) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 5));
+        left: calc(((66% / 7) * 2));
+    }
+    .nr.sw .slide li:nth-child(4) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 4));
+        left: calc(((66% / 7) * 3));
+    }
+    .nr.sw .slide li:nth-child(5) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 3));
+        left: calc(((66% / 7) * 4));
+    }
+    .nr.sw .slide li:nth-child(6) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 2));    
+        left: calc(((66% / 7) * 5));
+    }
+    .nr.sw .slide li:nth-child(7) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 1));
+        left: calc(((66% / 7) * 6));
+    }
+    .nr.sw .slide li:nth-child(8) .pic{
+        width: calc((100% / 3) + ((33% / 7) * 0));
+        left: calc((100%) * 2/3);
+    }
+
+}*/

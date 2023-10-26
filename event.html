@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LXI Square</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/board.css">
+  <link rel="stylesheet" href="./css/event.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+  #view-review{
+    position: absolute;
+    top: 180px;
+    right: 80px;
+  }
+  #view-review .aLink{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 36px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 6px 10px 6px 16px;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+  }
+  @media only screen and (max-width: 800px){
+    #view-review{
+      right: unset;
+      left: 20px;
+      top: 20px;
+    }
+  }
+</style>
+<body>
+  <header>
+    <div class="search-wrap">
+      <div class="search-inner">
+        <div class="search-bar">
+          <a class="search-back"></a>
+          <input type="text" placeholder="검색어를 입력해주세요.">
+          <input type="button">
+        </div>
+      </div>
+    </div>
+    <div class="header-search">
+      <span></span>
+      <span></span>
+    </div>
+    <a class="mainLogo" href="./index.html"><img src="./img/main_logo.png" alt="LX인터네셔널"></a>
+    <ul>
+      <li><a href="./magazine.html">Focus Session</a></li>
+      <li><a href="./people.html">People</a></li>
+      <li><a href="./issue.html">NewsRoom</a></li>
+      <li><a href="./contents.html">Contents</a></li>
+      <li><a href="./event.html">LXI Square</a></li>
+    </ul>
+    <div class="mobGnb">
+      <span></span><span></span><span></span>
+    </div>
+    <section id="gnbSection">
+      <div class="head">
+        <a href="/index.html"><img src="./img/main_logo_w.png" alt="LX International"></a>
+        <div class="closeBtn">
+          <span></span><span></span>
+        </div>
+      </div>
+      <div class="gnbList">
+        <ul>
+          <li><span>01</span><a href="/magazine.html">Focus Session</a></li>
+          <li><span>02</span><a href="/people.html">People</a></li>
+          <li><span>02</span><a href="/issue.html">NewsRoom</a></li>
+          <li><span>02</span><a href="/contents.html">Contents</a></li>
+          <li><span>02</span><a href="/event.html">LXI Square</a></li>
+        </ul>
+      </div>
+      <p id="copyright">Copyright© by LX International Corp. ALL RIGHT RESERVED.</p>
+    </section>
+  </header>
+  
+  <div id="wrap" class="eventPg">
+    <section id="titles">
+      <div class="title">
+        <!--22.05.13 타이틀 변경-->
+        <h1>LXI Square</h1>
+        <!--22.05.13 타이틀 변경 종료-->
+        <p>다양한 이벤트 응모를 통해 행운의 주인공이 되보세요!</p>
+      </div>
+    </section>
+    <div class="eventBg">
+      <img class="hexagon" src="./img/hexagon.png">
+      <img class="ebg_2" src="./img/ebg_2.png">
+      <div id="scrollBar"><div><div id="scrollLc"></div></div></div>
+      <div id="slideControl">
+        <div class="scLeft"><img src="./img/right-arrow-slide.png"></div>
+        <div class="scRight"><img src="./img/right-arrow-slide.png"></div>
+      </div>
+      <div id="view-review">
+        <a class="aLink" href="javascript:void(0);">
+          <span>후기보기</span>
+          <img src="./img/review.png"></a>
+        <a href="./review_popup.html" class="popup_hide_link"></a>
+      </div>
+    </div>
+    <!--22.05.13 팝업 링크 추가-->
+    <img class="ebg_1" src="./img/ebg_1.png">
+    <div class="sliderWrap">
+      <div id="slider">
+        <div class="slide so puw apply">
+          <a class="aLink" href="javascript:void(0);">
+            <img src="./img/slide_1.png"></a>
+          <a href="./event_popup.html" class="popup_hide_link"></a>
+        </div>
+        <div class="slide puw apdne">
+          <a class="aLink" href="javascript:void(0);">
+            <img src="./img/slide_1.png"></a>
+          <a href="./apply_popup.html" class="popup_hide_link"></a>
+        </div>
+        <div class="slide puw showr">
+          <a class="aLink" href="javascript:void(0);">
+            <img src="./img/slide_1.png"></a>
+          <a href="./event_popup.html" class="popup_hide_link"></a>
+        </div>
+        <div class="slide puw">
+          <a class="aLink" href="javascript:void(0);">
+            <img src="./img/slide_1.png"></a>
+          <a href="./apply_popup.html" class="popup_hide_link"></a>
+        </div>
+        <div class="slide puw">
+          <a class="aLink" href="javascript:void(0);">
+            <img src="./img/slide_1.png"></a>
+          <a href="./event_popup.html" class="popup_hide_link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--22.05.13 팝업종료버튼 추가-->
+  <div class="popUpexit"><span></span><span></span></div>
+<script src="./js/main.js"></script>
+<script src="./js/popup.js"></script>
+<script>
+  let slideLength = document.getElementsByClassName('slide').length;
+  document.getElementById("scrollLc").style.width = "calc(100% / " + slideLength + ")";
+  let slideCount = 1;
+  document.querySelector(".eventPg").addEventListener("wheel", eventWheel);
+  let moveAllow = 1;
+  function moveA(){
+    moveAllow = 1;
+  }
+  function moveA2(){
+    moveAllow = 0;
+  }
+  function slideMove(){
+  let ssc = slideCount - 1;
+  let loca = (slideCount * -260) + 260;
+  let locaM = (slideCount * -170) + 170;
+  if(window.innerWidth > 800){
+    document.getElementById('slider').style.transform = "translateX("+ loca +"px)";
+  } else if (window.innerWidth <= 800) {
+    document.getElementById('slider').style.transform = "translateX("+ locaM +"px)";
+  }
+    
+  let slideElement = document.getElementsByClassName("slide");
+    for(let i = 0; i < slideElement.length; i++){
+    slideElement[i].classList.remove("so");
+  };
+  document.querySelector("#slider div:nth-child(" + slideCount + ")").classList.add("so");
+  setTimeout(moveA, 100);
+
+  /*22.05.17 스크롤 위치이동 수치 변경*/
+  document.getElementById("scrollLc").style.left = "calc((100% / " + slideLength + ") * ("+ ssc +"))";    
+}
+function eventWheel(wEvent) {
+  if(moveAllow === 1 && window.innerWidth > 800){
+    moveA2();
+    let scrollY = wEvent.deltaY;
+    if( scrollY > 0){
+      if( slideCount < slideLength ){
+        slideCount++;
+      }
+    } else {
+      if( slideCount > 1 ){
+        slideCount--;
+      }
+    }
+    slideMove();
+  };
+};
+document.querySelector("#slideControl .scLeft").addEventListener("click", function(){
+  if( slideCount > 1 ){
+    slideCount--;
+  slideMove();
+  }
+  
+});
+document.querySelector("#slideControl .scRight").addEventListener("click", function(){
+  if( slideCount < slideLength ){
+    slideCount++;
+    slideMove();
+  }
+});
+window.addEventListener('resize',function(){
+  if(window.innerWidth <= 800){
+    let slideWidth = document.querySelector(".slide").style.width;
+    document.getElementById("slider").style.width = "calc((60vw + 20px) * " + slideLength + ")";
+    document.getElementById('slider').style.transform = "translateX(0px)";
+  }
+});
+if(window.innerWidth <= 800){
+    document.getElementById("slider").style.width = "calc((60vw + 20px) * " + slideLength + ")";
+}
+</script>
+</body>
+</html>

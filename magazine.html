@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Session</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/magazine.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="search-wrap">
+      <div class="search-inner">
+        <div class="search-bar">
+          <a class="search-back"></a>
+          <input type="text" placeholder="검색어를 입력해주세요.">
+          <input type="button">
+        </div>
+      </div>
+    </div>
+    <div class="header-search">
+      <span></span>
+      <span></span>
+    </div>
+    <a class="mainLogo" href="./index.html"><img src="./img/main_logo.png" alt="LX인터네셔널"></a>
+    <ul>
+      <li><a class="currentPage" href="./magazine.html">Focus Session</a></li>
+      <li><a href="./people.html">People</a></li>
+      <li><a href="./issue.html">NewsRoom</a></li>
+      <li><a href="./contents.html">Contents</a></li>
+      <li><a href="./event.html">LXI Square</a></li>
+    </ul>
+    <div class="mobGnb">
+      <span></span><span></span><span></span>
+    </div>
+    <section id="gnbSection">
+      <div class="head">
+        <a href="/index.html"><img src="./img/main_logo_w.png" alt="LX International"></a>
+        <div class="closeBtn">
+          <span></span><span></span>
+        </div>
+      </div>
+      <div class="gnbList">
+        <ul>
+          <li><span>01</span><a href="/magazine.html">Focus Session</a></li>
+          <li><span>02</span><a href="/people.html">People</a></li>
+          <li><span>02</span><a href="/issue.html">NewsRoom</a></li>
+          <li><span>02</span><a href="/contents.html">Contents</a></li>
+          <li><span>02</span><a href="/event.html">LXI Square</a></li>
+        </ul>
+      </div>
+      <p id="copyright">Copyright© by LX International Corp. ALL RIGHT RESERVED.</p>
+    </section>
+  </header>
+
+  <div id="wrap" class="magazine">
+    <section id="titles">
+      <!--22.05.27 변경-->
+      <img src="./img/fsBg.png" class="hgImg">
+      <h1>Focus Session</h1>
+      <div class="itnSection">
+        <div class="itn itn_1">
+          <div class="itnImgWrap">
+            <img src="./img/magazine1.png">
+          </div>
+          <div class="itnTitles">
+            <span class="a_ctg tc1">지주사 관련 콘텐츠</span>
+            <!--22.06.08 .itnDate .itn 하위에서 .itnTitle 하위로 변경 -->
+            <span class="itnDate">2022.10.26</span>
+            <span>포스팅 타이틀 출력란 포스팅 타이틀 출력란 포스팅 타이틀 출력란 포스팅 타이틀 출력란</span>
+          </div>
+        </div>
+
+        <div class="itn itn_2">
+          <div class="itnImgWrap">
+            <img src="./img/magazine2.png">
+          </div>
+          <div class="itnTitles">
+            <span class="a_ctg tc1">지주사 관련 콘텐츠</span>
+            <span class="itnDate">2022.10.26</span>
+            <span>포스팅 타이틀 출력란 포스팅 타이틀 출력란 포스팅 타이틀 출력란 포스팅 타이틀 출력란 </span>
+          </div>
+          
+        </div>
+
+        <div class="itn itn_3">
+          <div class="itnImgWrap">
+            <img src="./img/magazine3.png">
+          </div>
+          <div class="itnTitles">
+            <span class="a_ctg tc1">지주사 관련 콘텐츠</span>
+            <span class="itnDate">2022.10.26</span>
+            <span>포스팅 타이틀 출력란 포스팅 타이틀 출력란 포스팅 타이틀 출력란 포스팅 타이틀 출력란</span>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <div class="subtitle">
+      <ul>
+        <li><a href="#" class="viewAll btnUnderline currentView">View All</a></li>
+        <li><a href="#" class="btnUnderline">CEO Message</a></li>
+        <li><a href="#" class="btnUnderline">LXI Exclusive</a></li>
+      </ul>
+    </div>
+    <section id="main">
+      
+      <div class="magazineGrid">
+        <div class="mgzel">
+          <a href="./board.html">
+            <span class="a_ctg">지주사 관련 콘텐츠</span>
+            <div class="mgImgWrap"><img src="./img/ppimg.png"></div>
+            <div class="mgzTitle">
+              <span class="mgzDate">2022.10.28</span>
+              <h1>포스팅 타이틀 출력란 포스팅 타이틀 출력란</h1>
+            </div>
+          </a>
+        </div>
+        <div class="mgzel">
+          <a href="./board.html">
+            <!--22.06.07 스타일 변경으로 색상 적용 클래스 '.tc1' 삭제 -->
+            <span class="a_ctg">집중취재 콘텐츠</span>
+            <div class="mgImgWrap"><img src="./img/mgzel1.png"></div>
+            <div class="mgzTitle">
+              <span class="mgzDate">2022.10.28</span>
+              <h1>포스팅 타이틀 출력란 포스팅 타이틀 출력란</h1>
+            </div>
+          </a>
+        </div>
+        <div class="mgzel">
+          <a href="./board.html">
+            <span class="a_ctg">지주사 관련 콘텐츠</span>
+            <div class="mgImgWrap"><img src="./img/mgzel1.png"></div>
+            <div class="mgzTitle">
+              <span class="mgzDate">2022.10.28</span>
+              <h1>포스팅 타이틀 출력란 포스팅 타이틀 출력란</h1>
+            </div>
+          </a>
+        </div>
+        <div class="mgzel">
+          <a href="./board.html">
+            <span class="a_ctg">집중취재 콘텐츠</span>
+            <div class="mgImgWrap"><img src="./img/mgzel1.png"></div>
+            <div class="mgzTitle">
+              <span class="mgzDate">2022.10.28</span>
+              <h1>포스팅 타이틀 출력란 포스팅 타이틀 출력란</h1>
+            </div>
+          </a>
+        </div>
+        <div class="mgzel">
+          <a href="./board.html">
+            <span class="a_ctg">지주사 관련 콘텐츠</span>
+            <div class="mgImgWrap"><img src="./img/mgzel1.png"></div>
+            <div class="mgzTitle">
+              <span class="mgzDate">2022.10.28</span>
+              <h1>포스팅 타이틀 출력란 포스팅 타이틀 출력란</h1>
+            </div>
+          </a>
+        </div>
+        <div class="mgzel">
+          <a href="./board.html">
+            <span class="a_ctg">지주사 관련 콘텐츠</span>
+            <div class="mgImgWrap"><img src="./img/mgzel1.png"></div>
+            <div class="mgzTitle">
+              <span class="mgzDate">2022.10.28</span>
+              <h1>포스팅 타이틀 출력란 포스팅 타이틀 출력란</h1>
+            </div>
+          </a>
+        </div>
+        <div class="mgzel">
+          <a href="./board.html">
+            <span class="a_ctg">지주사 관련 콘텐츠</span>
+            <div class="mgImgWrap"><img src="./img/mgzel1.png"></div>
+            <div class="mgzTitle">
+              <span class="mgzDate">2022.10.28</span>
+              <h1>포스팅 타이틀 출력란 포스팅 타이틀 출력란</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="readMore">
+        <a class="btnBg" href="#">LOAD MORE</a>
+      </div>
+      <h4 class="vtc">Focus Session</h1>
+    </section>
+  </div>
+  <nav class="ttt">
+    <div class="navBg_r"></div>
+    <div class="navBg_g"></div>
+    <span>TOP</span>
+  </nav>
+  <!--22.06.08 footer 추가-->
+  <footer>
+    <div class="footerWrap">
+      <div class="footerImg">
+        <img src="./img/main_logo_w.png">
+      </div>
+      <span>Copyright© by LX International Corp. ALL RIGHT RESERVED.</span>
+    </div>
+  </footer>
+<script src="./js/main.js"></script>
+<script>
+/*22.05.13 페이지 로딩시 트랜지션*/
+/*22.06.07 수치 변경*/
+function a0(){
+  document.querySelector('.magazine #titles h1').style.transform = "translateX(0px)";
+  document.querySelector('.magazine #titles h1').style.opacity = "1";
+}
+function a1(){
+  document.querySelector('.itn_1').style.top = "30px";
+  document.querySelector('.itn_1').style.opacity = "1";
+}
+function a2(){
+  document.querySelector('.itn_2').style.bottom = "0px";
+  document.querySelector('.itn_2').style.opacity = "1";
+}
+function a3(){
+  document.querySelector('.itn_3').style.top = "30px";
+  document.querySelector('.itn_3').style.opacity = "1";
+}
+
+setTimeout(a0, 300);
+setTimeout(a1, 000);
+setTimeout(a2, 500);
+setTimeout(a3, 1000);
+
+/*22.05.13 더보기 기능 추가*/
+$(document).ready(function(){
+  $(function(){
+    $(".mgzel").css("display","none");
+    $(".mgzel").slice(0, 4).show();
+    $(".btnBg").click(function(e){ 
+    e.preventDefault();
+    $(".mgzel:hidden").slice(0, 4).show(); 
+    if($(".mgzel:hidden").length == 0){ 
+    }
+    });
+  });
+
+
+  function radiusCalc(){
+  let bd = $(".itnImgWrap").innerWidth() / 2;
+  console.log(bd);
+  $(".itn_1 .itnImgWrap").css('borderRadius',""+ bd +"px "+ bd +"px 0 "+ bd +"px");
+  $(".itn_2 .itnImgWrap").css('borderRadius',""+ bd +"px "+ bd +"px 0 0");
+  $(".itn_3 .itnImgWrap").css('borderRadius',"0 "+ bd +"px 0 "+ bd +"px");
+  //let liw = document.getElementsByClassName("itnImgWrap");
+  //document.getElementsByClassName(".itn_1 .itnImgWrap").style.borderRadius = "0 "+ bd +"px 0 "+ bd +"px"
+    /*for(let i = 0; i < liw.length; i++){
+    liw[i].style.borderRadius = "0 "+ bd +"px 0 "+ bd +"px"
+    };*/
+  }
+  radiusCalc();
+  window.addEventListener('resize',function(){
+    radiusCalc();
+  });
+});
+
+/*22.05.13 border-radius 반응형으로 전환*/
+/*function radiusCalc(){
+  bd = document.querySelector(".itnImgWrap").clientWidth / 2;
+  let liw = document.getElementsByClassName("itnImgWrap");
+  document.getElementsByClassName(".itn_1 .itnImgWrap").style.borderRadius = "0 "+ bd +"px 0 "+ bd +"px"
+    /*for(let i = 0; i < liw.length; i++){
+    liw[i].style.borderRadius = "0 "+ bd +"px 0 "+ bd +"px"
+    };*/
+/*}
+radiusCalc();
+window.addEventListener('resize',function(){
+  radiusCalc();
+});*/
+</script>
+</body>
+</html>

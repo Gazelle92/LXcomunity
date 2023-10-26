@@ -1,0 +1,442 @@
+body{
+    background-color: #373737;
+}
+header ul li a{
+    color: #fff;
+}
+footer .footerWrap{
+    border-top: 1px solid #fff;
+}
+footer .footerWrap span{
+    color: #fff;
+}
+.magazine #titles{
+    padding: 120px 80px 0;
+    position: relative;
+    margin-top: 0;
+    background-image: linear-gradient(to bottom, rgba(4, 32, 29, 0), #373737);
+}
+.magazine #titles h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 120px;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: ease 0.8s all;
+}
+/*width: calc((100% - 600px) / 11); 한컬럼*/
+.itnSection{
+    height: calc((((100vw - 600px) / 11 * 3) + 160px ) * 1.5 + 160px);
+    width: 100%;
+    position: relative;
+}
+.itn{
+    opacity: 0;
+    /*width: calc(((100% - 600px) / 11 * 3) + 160px );*/
+    width: 25%;
+    position: absolute;
+    cursor: pointer;
+}
+.itn .itnImgWrap{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.itn .itnImgWrap::before{
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 150%;
+}
+.itn:hover img{
+    transform: scale(1.1);
+}
+.itn img{
+    transition: ease 0.8s transform;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    object-fit: cover;
+}
+.itnTitles{
+    padding: 16px;
+    position: absolute;
+    background-color: #fff;
+    bottom: 30px;
+    right: calc(((-100%) /3) * 2);
+    width: 100%;
+    box-sizing: border-box;
+}
+.itnTitles span{
+    font-size: 18px;
+    line-height: 28px;
+    color: #222222;
+}
+.itn .itnDate{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 300;
+    display: block;
+    line-height: 24px;
+}
+.itn_1{
+    top: 100px;
+    transition: all ease 0.8s;
+}
+.itn_2{
+    bottom:80px;
+    left: calc(((100%/12) * 5) + 40px);
+    transition: all ease 1.2s;
+}
+.itn_3{
+    top: 80px;
+    right: 0;
+    transition: all ease 1.0s;
+}
+.itn_3 .itnTitles{
+    right: unset;
+    left: calc(((-100%) /3) * 2);
+    bottom: unset;
+    top: 28px;
+}
+
+.magazine .subtitle{
+    margin-top: 0;
+}
+
+.magazineGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    position: relative;
+    margin-top: 120px;
+}
+.mgzel{
+    position: relative;
+    cursor: pointer;
+}
+
+.mgImgWrap{
+    width: 75%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.mgImgWrap::before{
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 150%;
+}
+.mgzel img{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    /*22.05.27 수정*/
+    object-fit: cover;
+    transition: ease 0.8s transform;
+}
+.mgzel:hover img{
+    transform: scale(1.1);
+}
+.mgzel .a_ctg{
+    font-size: 14px;
+    line-height: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: bold;
+    padding: 2px 16px;
+    color: #fff;
+    background-color: #9a9a9a;
+}
+.mgzTitle{
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+    background-color: #fff;
+    float: right;
+    position: relative;
+    top: -40px;
+}
+.mgzTitle::after{
+    content: "";
+    clear: both;
+}
+.mgzTitle .mgzDate{
+    font-size: 14px;
+    line-height: 24px;
+    color: #9a9a9a;
+    margin-bottom: 4px;
+}
+.mgzTitle h1{
+    font-size: 18px;
+    line-height: 28px;
+    color: #222222;
+    
+}
+.itnTitles .a_ctg{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    padding: 2px 16px;
+    background-color: #9a9a9a;
+    color: #fff;
+    box-sizing: border-box;
+}
+.itn_3 .itnTitles .a_ctg{
+    left: unset;
+    right: 0;
+}
+.hgImg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    left: 0;
+
+}
+.mgz_bg2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 44.5%;
+}
+.ttt{
+    color: #000;
+    background-color: #fff;
+    right: 80px;
+}
+.ttt:hover{
+    color: #fff;
+}
+.vtc{
+    font-size: 140px;
+    color: #f6f6f6;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    position: absolute;
+    right: -20px;
+    height: 1000px;
+    top: 0;
+    writing-mode: vertical-rl;
+    line-height: 1;
+    z-index: -1;
+    opacity: 0.2;
+}
+.btnBg{
+    color: #fff;
+    margin-bottom: 80px;
+}
+.btnBg::before{
+    background-color: #fff;
+}
+@media only screen and (max-width: 1280px) {
+    .magazineGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .itnTitles span{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .vtc{
+        display: none;
+    }
+    /*
+    .itn{
+        width: 23%;
+    }
+    .itnTitles{
+        width: 250px;
+        padding: 10px;
+    }*/
+}
+@media only screen and (max-width: 1080px) {
+    .magazineGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .magazine #titles{
+        padding: 120px 20px 0;
+    }
+    .hgImg{
+        top: 0px;
+        left: unset;
+        right: 0;
+    }
+    #main{
+        flex-direction: column-reverse;
+        display: flex;
+        margin-bottom: 100px;
+    }
+    
+    #main article:first-child{
+        margin-top: 40px;
+    }
+    #main article{
+        flex-direction: column;
+    }
+    #main article .thumbnail, #main article div{
+        margin-right: 0;
+        width: 100%;
+    }
+    #main article .thumbnail{
+        padding-bottom: 56.25%;
+    }
+    .ms{
+        margin-top: 20px;
+    }
+    .a_ctg{
+        font-size: 8px;
+    }
+    .a_tt{
+        font-size: 14px;
+    }
+    .a_pr{
+        font-size: 11px;
+        margin-bottom: 0;
+        line-height: 18px;
+    }
+    .a_bt .btnBg{
+        display: none;
+    }
+    #main article .ms .a_bt{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: unset;
+    }
+    .a_dt{
+        font-size: 8px;
+    }
+    .magazine #titles h1{
+        font-size: 36px;
+        margin-left: 20px;
+    }
+    .itnSection{
+        height: unset;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .itn{
+        position: relative;
+        top: unset!important;
+        width: 100%;
+        margin-top: 40px;
+        left: 0;
+    }
+    .itn .itnImgWrap{
+        position: relative;
+        width: 66%;
+    }
+    .itnTitles{
+        width: 66.666vw;
+        right: -40px;
+    }
+    .itn_2.itn .itnImgWrap{
+        margin-left: 34%;
+    }
+    .itn_2.itn .itnTitles{
+        right: unset;
+        left: -40px;
+    }
+    .itn_3{
+        right: unset;
+    }
+    .itn_3 .itnTitles{
+        left: unset;
+        right: -40px;
+        bottom: 30px;
+        top: unset;
+    }
+    .itn_2 .itnTitles .a_ctg{
+        left: unset;
+        right: 0;
+    }
+    .itn_3 .itnTitles .a_ctg{
+        left: 0;
+        right: unset;
+    }
+    .itn .itnDate{
+        right: unset;
+        left: 66%;
+        transform: unset;
+        font-size: 8px;
+    }
+    .itn_2 .itnDate{
+        left: unset;
+        right: 66%;
+    }
+    .itnTitles span{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .itnTitles .a_ctg{
+        display: block;
+    }
+    .magazineGrid{
+        display: block;
+        margin-top: 0;
+    }
+    .mgImgWrap{
+        display: none;
+    }
+    .mgzTitle{
+        top: unset;
+        width: 100%;
+        position: relative;
+        float: none;
+        padding-top: 30px;
+    }
+    .mgzel{
+        margin-bottom: 40px;
+        display: none;
+    }
+    .mgzel .a_ctg.tc1{
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        top: 16px;
+    }
+    .mgzTitle .mgzDate{
+        position: absolute;
+        right: 16px;
+        bottom: calc(100% + 8.5px);
+        font-size: 8px;
+        line-height: 1;
+    }
+    .mgzTitle h1{
+        font-size: 14px;
+        line-height: 21px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .mgz_bg2{
+        right: unset;
+        left: -20px;
+        bottom: 80vw;
+        z-index: -1;
+        width: 66%;
+        transform: scaleX(-1);
+    }
+}

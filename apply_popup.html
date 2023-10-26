@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LXI Square</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/board.css">
+  <link rel="stylesheet" href="./css/input_move.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color: unset;">
+  <div id="popUpWrap">
+    <!--22.05.13 팝업창에서 팝업종료버튼 삭제-->
+    <div class="pui">
+      <div class="th">
+        <div class="th_cnd">
+          <span class="a_ctg tc3">LXI 이벤트</span>
+          <span class="b_date">2020.10.28</span>
+        </div>
+        <h1 class="boardTitle">이벤트 응모하기</h1>
+
+        <div class="board_border_line"></div>
+        
+      </div>
+      <section id="main">
+        <article class="board_article">
+          <form>
+            <div class="applyForm">
+              <p>
+                정확한 정보를 입력해주세요.<br>
+                당첨 여부는 기입해주신 연락처로 전달드리겠습니다.
+              </p>
+              <div class="inputWrap">
+                <p class="afmt">이름</p>
+                <label for="form-input">
+                  <input type="text" id="applyName">
+                </label>
+              </div>
+              <div class="inputWrap">
+                <p class="afmt">부서</p>
+                <label for="form-input">
+                  <input type="text" id="applyName">
+                </label>
+              </div>
+              <div class="inputWrap">
+                <p class="afmt">연락처</p>
+                <label for="form-input">
+                  <input type="text" id="applyName">
+                </label>
+              </div>
+              <div class="agree">
+                <label class="form-checkbox">
+                  <input type="checkbox" id="agree_privacy" name="agree_privacy">
+                  <span class="check"></span>
+                </label>
+                <span>개인정보 수집동의 열람/삭제에 대해 하기 내용을 확인한 후 이에 동의합니다</span>
+              </div>
+              <div class="agreeBox">
+                <dl>
+                  <dt>(1) 개인정보 수집 항목</dt>
+                  <dd>
+                    <p>LX인터내셔널(이하 “회사”) 홈페이지에서는 아래와 같이 개인정보를 수집하고 있습니다.</p>
+                    <div class="tableList">
+                      <table>
+                        <caption>개인정보 수집 항목</caption>
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th>수집방법</th>
+                            <th>수집항목</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>필수입력정보</td>
+                            <td>고객문의, 투자문의 시 수집</td>
+                            <td>이메일주소</td>
+                          </tr>
+                          <tr>
+                            <td>자동수집</td>
+                            <td>인터넷 브라우저를 통한 수집</td>
+                            <td>IP Address, 쿠키, 방문 일시, 서비스 이용 기록</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </dd>
+                  <br>
+                  <dt>(2) 개인정보의 수집 및 이용 목적</dt>
+                  <dd>
+                    “회사”는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+                    고객문의(협업, 채용, IR 등) 대한 고지사항 전달, 본인의사 확인 등 원활한 의사소통 경로의 확보
+                  </dd>
+                  <br>
+                  <dt>(3) 개인정보 보유 및 이용기간</dt>
+                  <dd>
+                    “회사”는 법령 또는 사용자로부터 개인정보를 수집 시 동의 받은 범위 내에서 개인정보를 보유 및 이용합니다.<br>
+                    각각의 개인정보 보유 및 이용기간은 다음과 같습니다.
+                    <div class="tableList">
+                      <table>
+                        <caption>개인정보 수집 항목</caption>
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th>보유 및 이용기간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>이메일주소, IP Address, 쿠키, 방문 일시, 서비스 이용 기록</td>
+                            <td>3년</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </dd>
+                  <br>
+                  <dt>(4) 개인정보 수집 및 이용에 대한 동의 철회</dt>
+                  <dd>”회사” 홈페이지를 통해 개인정보의 수집, 이용에 대해 사용자께서 동의하신 내용을 언제든지 철회하실 수 있습니다. 동의 철회는 개인정보운영책임자에게 전화, 이메일 등으로 연락하시면 즉시 개인정보의 삭제 등 필요한 조치를 하겠습니다. 그러나, 위 개인정보는 고객문의 및 투자문의 서비스 제공을 위하여 필수적인 정보로서, 동의 철회 시 서비스 이용이 제한될 수 있습니다.</dd>
+                </dl>
+              </div>
+              <div class="agreeBox">
+                <h4>■ 개인정보 열람/삭제 요청 시 작성내용 안내</h4>
+                <br>
+                <p>개인정보 열람/삭제 요청 시 아래 내용을 작성하시어 Contact Us로 제출 바랍니다.</p>
+                <ul>
+                  <li><strong>이메일 주소</strong>: (반드시 이전에 Contact Us 제출 시 사용한 이메일 주소를 입력해야 합니다.)</li>
+                  <li>
+                    <strong>요구사항</strong> (아래 내용 중 선택하여 기재바랍니다.)
+                    <ul>
+                      <li>- 개인정보 수집 동의 및 이용내역 열람</li>
+                      <li>- 개인정보 삭제</li>
+                    </ul>
+                  </li>
+                  <li><strong>요청사유</strong>: (상세히 기재바랍니다.)</li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </article>    
+      </section>
+    </div>
+  </div>
+  
+  <div class="applyBtn">
+    <a href="#" class="applyBtnCancel">CANCEL</a>
+    <a href="#" class="applyBtnApply">Join Now</a>
+  </div>
+<script src="./js/main.js"></script>
+<script>
+  let cols = document.querySelectorAll('div.inputWrap'); 
+  [].forEach.call(cols,function(col){ 
+    col.addEventListener("click",click,false); 
+  }); 
+  function click(e){ 
+    if(this.classList.contains("iFocused") === false){
+      this.classList.add("iFocused");
+    }
+  }
+  document.querySelector(".check").addEventListener("click",function(){
+    if(this.classList.contains("checked") === true){
+      this.classList.remove("checked");
+    } else {
+      this.classList.add("checked");
+    }
+  })
+</script>
+</body>
+</html>

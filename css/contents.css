@@ -1,0 +1,478 @@
+#wrap.eventPg #titles p{
+    padding-left: 0;
+    position: absolute;
+    padding: 16px 0 0 ;
+    font-weight: normal;
+}
+#wrap.eventPg{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#wrap .eventBg{
+    background-color: #b42f2e;
+    height: calc(100% - 160px);
+    width: 56.5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+#wrap.eventPg #titles{
+    width: 43.5%;
+    margin-top: 0;
+    position: absolute;
+    top: 240px;
+    box-sizing: border-box;
+    left: 0;
+    transition: ease all 0.8s;
+    opacity: 1;
+}
+#wrap.eventPg #titles.firstS{
+    left: -100px;
+    opacity: 0;
+}
+#wrap .eventBg .ebg_2{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    width: 550px;
+}
+#wrap .eventBg .hexagon{
+    position: absolute;
+    top: 17%;
+    left: 8.5%;
+    width: 275px;
+}
+.ebg_1{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 620px;
+    z-index: -1;
+}
+.ebg_2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 645px;
+    z-index: -1;
+    right: -70px;
+}
+#wrap.eventPg #scrollBar{
+    width: calc(100% - 160px);
+    position: absolute;
+    height: 2px;
+    background-color: #e37d7d;
+    bottom: 48px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+#scrollBar > div{
+    width: calc(100% - 200px);
+    margin: 0 200px 0 0;
+    position: relative;
+}
+#wrap.eventPg #scrollBar #scrollLc{
+    width: 200px;
+    box-sizing: border-box;
+    height: 6px;
+    background-color: #f8a0a0;
+    border-radius: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    transition:  ease 0.6s left;
+}
+#slider{
+    display: flex;
+    bottom: 180px;
+    position: absolute;
+    left: 43.5%;
+    transition: ease transform 0.8s;
+    transform: translateX(0px);
+    align-items: center;
+}
+#slider .slide{
+    position: relative;
+    margin-right: 80px;
+    display: inline-block;
+    width: 20vw;
+    max-width: 300px;
+    cursor: pointer;
+}
+#slider .slide .siw{
+    width: 100%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    transition:  ease all 0.6s;
+    border-radius: 0 165px 0 165px;
+    box-shadow: 0px 10px 11px 0px #c5c5c5;
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+#slider .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+}
+.siwHover{
+    transition: ease all 0.3s;
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: 0;
+    padding-top: 150%;
+    background-color:rgba(180, 47, 46, 0.8);
+    display: block;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+}
+.gel:hover .siwHover, #slider .slide:hover .siwHover{
+    opacity: 1;
+}
+/*#slider .slide:hover .siwHover{
+    opacity: 1;
+}*/
+.siwHover p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% - 20px));
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #fff;
+    transition: ease-out transform 0.3s;
+}
+#slider .slide:hover .siwHover p, .gel:hover .siwHover p{
+    transform: translateY(-50%);
+}
+#slider .slide span{
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0;
+    color: #222222;
+    font-weight: 600;
+}
+#slider .slide.loadMore{
+    text-align: center;
+    cursor: unset;
+}
+.slide > a{
+    display: block;
+    position: relative;
+}
+.sDate{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+    transform: translateX(100%);
+    font-size: 14px;
+    line-height: 24px;
+    color: #9a9a9a;
+}
+.loadMore a{
+    color: #222222;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 24px;
+    padding-bottom: 6px;
+    transform: translateY(-100%);
+    display: inline-block;
+}
+.loadMore a.btnBg::before{
+    background: #222222;
+}
+.slide .btnBg:hover:before{
+    background-color: #b42f2e;
+}
+#slider .slide{
+    transition: ease all 0.3s;
+}
+.subtitle{
+    margin-top: 0;
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    z-index: 1;
+}
+.subtitle ul li:last-child{
+    padding-right: 80px;
+}
+.a_ctg{
+    display: none;
+}
+@media only screen and (max-width: 1280px) {
+    #titles{
+        padding: 0 20px 0 40px;
+    }
+    #titles .title{
+        font-size: 56px;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: #ebebeb;
+    }
+    #wrap.eventPg #titles{
+        margin-top: 120px;
+        position: relative;
+        top: unset;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+    #wrap.eventPg #titles p{
+        padding: 8px 0 0 0;
+    }
+    .eventPg{
+        display: flex;
+        flex-direction: column;
+    }
+    #wrap .eventBg{
+        width: 100%;
+        position: absolute;
+        height: calc(100% - 280px);
+    }
+    #slider{
+        left: 0;
+        position: relative;
+        bottom: unset;
+        width: 400vw;
+        padding-bottom: 40px;
+    }
+    .sliderWrap{
+        width: calc(100% - 0px);
+        position: absolute;
+        overflow-x: scroll;
+        bottom: 110px;
+        box-sizing: border-box;
+        padding: 0 20px 0 20px;
+        z-index: 2;
+    }
+    .sliderWrap::-webkit-scrollbar {
+        height: 6px;  /* 스크롤바의 너비 */
+    }
+    
+    .sliderWrap::-webkit-scrollbar-thumb {
+        width: 25%; /* 스크롤바의 길이 */
+        background: #d6d6d6; /* 스크롤바의 색상 */
+        padding: 0 20px;
+        border-radius: 5px;
+        height: 6px;
+    }
+
+    #slider .slide{
+        width: 200px;
+        margin-right: 40px;
+    }
+    #slider .slide .siw{
+        border-radius: 0 100px 0 100px;
+    }
+    #slideControl{
+        right: unset;
+        left: 20px;
+        display: none;
+    }
+    #wrap.eventPg #scrollBar{
+        width: calc(100% - 40px);
+        bottom: 42.5px;
+    
+    }
+    #scrollBar > div{
+        width: calc(100% - 80px);
+        display: none;
+    }
+    #wrap.eventPg #scrollBar #scrollLc{
+        width: 80px;
+    }
+    #wrap.eventPg .ebg_1{
+        display: none;
+    }
+    #wrap .eventBg .hexagon{
+        top: unset;
+        bottom: 10%;
+        left: unset;
+        right: 8.5%;
+    }
+    #wrap .eventBg .ebg_2{
+        left: unset;
+        right: 0;
+        width: 180px;
+    }
+    .subtitle{
+        height: 50px;
+        overflow-x: unset;
+    }
+    .subtitle ul li:last-child{
+        padding-right: 0;
+    }
+    .subtitle ul{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .subtitle ul li:first-child{
+        position: absolute;
+        left: 20px;
+    }
+    #slider .slide span{
+        font-size: 14px;
+    }
+    .sDate{
+        font-size: 8px;
+    }
+    #slider .slide.loadMore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loadMore a{
+        transform: unset;
+        font-size: 12px;
+    }
+    .siwHover p{
+        font-size: 12px;
+    }
+    .msb{
+        width: calc(100% - 40px);
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 1;
+        height: 2px;
+        margin: 0 20px;
+        background-color: #fff;
+        bottom: 112px;
+    }
+    .a_ctg{
+        font-size: 8px;
+        display: block;
+        padding-bottom: 8px;
+    }
+    #wrap.eventPg #titles.firstS{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+
+/* Contents List */
+.cl{
+    position: relative;
+    padding: 0 80px;
+    margin: 180px auto;
+    max-width: 1600px;
+    box-sizing: border-box;
+}
+.cl .backBtn{
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #222222;
+    line-height: 1.33;
+    font-weight: bold;
+    display: block;
+    width: 140px;
+    text-align: right;
+    position: relative;
+    padding-bottom: 6px;
+    height: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cl .backBtn::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+
+    width: 100%;
+    height: 2px;
+    background: #222222;
+    transition: all 0.3s ease;
+}
+.backBtn p, .backBtn span{
+    position: absolute;
+    display: block;
+}
+.backBtn p{
+    right: 0;
+}
+.backBtn span{
+    right: -100%;
+}
+.backBtn:hover p{
+    right: 100%;
+    transition: ease all 0.4s;
+}
+.backBtn:hover span{
+    right: 0%;
+    transition: ease all 0.4s;
+}
+.cl .contentsGrid{
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-gap: 60px;
+    padding-top: 60px;
+}
+.liw{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 11px 0px #c5c5c5;
+}
+.liw img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+
+}
+.gel > span{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding-top: 20px;
+    display: inline-block;
+}
+@media only screen and (max-width: 1280px) {
+    .cl .contentsGrid{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .cl .contentsGrid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .cl .contentsGrid{
+        display: block;
+    }
+    .gel{
+        margin-bottom: 40px;
+    }
+    .cl .backBtn{
+        position: absolute;
+        left: 20px;
+        width: 100px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
